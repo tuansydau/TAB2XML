@@ -1,11 +1,16 @@
 # TablatureConverter 🎶
 
+
 ---
 
 ### Table of Contents
 
 - [Description](#description)
-- [Getting Started](#getting-started)
+- [System Requirements](#system-requirements)
+- [User Manual](#user-manual)
+- [Requirements Document](#requirements-document)
+- [Testing Document](#testing-document)
+- [Design Document](#design-document)
 - [Contributors](#contributors)
 - [License](#license)
 
@@ -16,16 +21,19 @@ Tablature notation is a way of writing down an instrument’s parts in an access
 
 The software product will consist of a desktop application. Upon the upload of a tablature in *.txt form, the system will convert the tab to a MusicXML file format.
 
-### Sample Guitar Tablature
+### Inputting .txt Tablature
+![image](https://user-images.githubusercontent.com/56422075/116962180-4bed6e00-ac73-11eb-9c1e-020ee30167ec.png)
 
-```
-e|------------------------------------------------------------|
-B|------------------------------------------------------------|
-G|------------------------------------------------------------|
-D|------------------------------------------------------------|
-A|--2-0-----2-0-----------0-0-0-0-2-0-------------------------|
-E|------3-------3--3-3-3-3------------3-----------------------|
-```
+### Output .xml Tablature
+![image](https://user-images.githubusercontent.com/56422075/116962192-560f6c80-ac73-11eb-8dda-c875ce64c100.png)
+
+### XML Output on Musescore
+![MuseScore-3_-convertedSong-2021-05-04-01-00-34 (1)](https://user-images.githubusercontent.com/56422075/116962805-0f227680-ac75-11eb-86db-20742346d5bd.gif)
+
+
+
+
+
 
 
 ### Technologies
@@ -36,28 +44,36 @@ E|------3-------3--3-3-3-3------------3-----------------------|
 
 ---
 
-## Getting Started
+## System Requirements
 
 TablatureConverter requires the the following to run:
-- Download [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows) or [Eclipse](https://www.eclipse.org/downloads/)
-- Download [JavaFX SDK](https://gluonhq.com/products/javafx/)
+- [IntelliJ](https://www.jetbrains.com/idea/download/#section=windows) or [Eclipse](https://www.eclipse.org/downloads/)
+- Java version 11 or newer
 
+---
 
-### How to Access for Eclipse
+## User Manual
 
-1. Download ZIP in repository and unzip the file
+This [user manual](https://github.com/jamesmqle/TablatureConverter/blob/main/Documents/UserManual.pdf) includes installation instructions, "how to get started", and common usage scenarios.
 
-![Code](https://res.cloudinary.com/practicaldev/image/fetch/s--L5zkGG8u--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/95r8bqqsnt0losag50b1.png)
+---
 
-2. Open Eclipse -> Import -> Exisiting project into workspace -> Select the unzipped file "TablatureConverter"
-3. Add text below to VM arguments in run configurations
-```
---module-path "path_here" --add-modules javafx.controls,javafx.fxml
-```
-4. Go to src/GUI, open application package, right click Main.java -> Run As -> Java Application
-5. Program is now running! The outputted MusicXML file is in the src/sample package.
+## Requirements Document
+This [requirements document](https://github.com/jamesmqle/TablatureConverter/blob/main/Documents/RequirementsDocument.pdf) describes the needs of the customer. All required features are described in detail. Use cases and user stories are provided.
 
-        
+---
+
+## Testing Document
+
+The [testing document](https://github.com/jamesmqle/TablatureConverter/blob/main/Documents/TestingDocument.pdf) describes the test cases, the way they were derived, and the way they were implemented.
+
+---
+
+## Design Document
+The [design document](https://github.com/jamesmqle/TablatureConverter/blob/main/Documents/DesignDocument.pdf) describes the high level organization of the system as well as individual components. Informative class and sequence diagrams are provided and Maintenance scenarios are discussed. 
+
+---
+
 ## Contributors
 
 - https://github.com/jamesmqle
@@ -74,6 +90,8 @@ Tuan Dau - tdau@my.yorku.ca
 James Le - jamesmql@my.yorku.ca
 
 Temi Odunfa- odunifa.temi@gmail.com
+
+Amin Mohammadi- amin45mh@gmail.com
 
 ---
 
@@ -100,4 +118,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 
